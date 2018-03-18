@@ -1,13 +1,8 @@
-# Create a file. Here Dockerfile and place
-# commands you want to run.
+# Create a file. Here Dockerfile and place the commands you want to run.
 sudo docker build -t hello-world .
 
-# Run your local docker image in a container 
-# named 'hello-world'.
+# Run your local docker image container.
 sudo docker run -t hello-world
 
-# If you run an image not locally available.
-# Meaning you did not build it, docker will
-# automatically look for that image in docker
-# hub, download it and run it.
+# If you run an image not locally available, docker will look for that image in docker-hub automatically, locate tge image if availabke, and downliad and run it.
 sudo docker run -t alpine hostname
